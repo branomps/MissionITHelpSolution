@@ -151,7 +151,58 @@ namespace MissionIT.WebHelp.Data
                         SectionName = "How to use Help"
                     }
                 );
-            modelBuilder.Entity<Article>().ToTable("tblArticles");
+
+            modelBuilder.Entity<Article>().ToTable("tblArticles").HasData
+                (
+                        new Article
+                        {
+                            ArticleID = 1,
+                            ArticleName = "Menu",
+                            ArticleDescription = "werwwwwwwwwwwwwwwwwwwwwwwwwewrwerwerwerwe",
+                            ArticleImageUrl = "010001.jpg",
+                            SectionID = 1,
+                        },
+                    new Article
+                    {
+                        ArticleID = 2,
+                        ArticleName = "Routes",
+                        ArticleDescription = "werwwwwwwwwwwwwwwwwwwwwwwwwewrwerwerwerwe",
+                        ArticleImageUrl = "010002.jpg",
+                        SectionID = 2
+                    },
+                    new Article
+                    {
+                        ArticleID = 3,
+                        ArticleName = "Drivers",
+                        ArticleDescription = "werwwwwwwwwwwwwwwwwwwwwwwwwewrwerwerwerwe",
+                        ArticleImageUrl = "010003.jpg",
+                        SectionID = 2
+                    },
+                    new Article
+                    {
+                        ArticleID = 4,
+                        ArticleName = "Vehicles",
+                        ArticleDescription = "wssssssssssssssssssssssssssssssssssss",
+                        ArticleImageUrl = "020004.jpg",
+                        SectionID = 3
+                    },
+                    new Article
+                    {
+                        ArticleID = 5,
+                        ArticleName = "Drivers",
+                        ArticleDescription = "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+                        ArticleImageUrl = "020005.jpg",
+                        SectionID = 3
+                    },
+                    new Article
+                    {
+                        ArticleID = 6,
+                        ArticleName = "Audit Trial",
+                        ArticleDescription = "werwwwwwwwwwwwwwwwwwwwwwwwwewrwerwerwerwe",
+                        ArticleImageUrl = "050006.jpg",
+                        SectionID = 4
+                    }
+                );
         }
     }
 }
