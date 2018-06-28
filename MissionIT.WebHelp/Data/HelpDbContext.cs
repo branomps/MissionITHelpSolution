@@ -9,6 +9,10 @@ namespace MissionIT.WebHelp.Data
 {
     public class HelpDbContext : DbContext
     {
+        public HelpDbContext(DbContextOptions<HelpDbContext> options)
+            : base(options)
+        { }
+
         public DbSet<Section> Sections { get; set; }
         public DbSet<Article> Articles { get; set; }
 
