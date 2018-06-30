@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.ApplicationInsights.Extensibility;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -13,8 +14,11 @@ namespace MissionIT.WebHelp
 {
     public class Startup
     {
+       
+
         public Startup(IConfiguration configuration)
         {
+           
             Configuration = configuration;
         }
 
@@ -31,6 +35,7 @@ namespace MissionIT.WebHelp
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+
             if (env.IsDevelopment())
             {
                 app.UseBrowserLink();

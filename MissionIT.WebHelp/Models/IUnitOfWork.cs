@@ -6,10 +6,10 @@ using MissionIT.WebHelp.Models;
 
 namespace MissionIT.WebHelp.Models
 {
-    interface IUnitOfWork 
-    {
-        ISectionRepository Sections { get; }
-        IArticleRepository Articles { get; }
-        int Complete();
-    }
+    //interface IUnitOfWork 
+    //{
+    //    ISectionRepository Sections { get; }
+    //    IArticleRepository Articles { get; }
+    //    int Complete();
+    //}
 }

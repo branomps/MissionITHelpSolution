@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 
 namespace MissionIT.WebHelp.Models
 {
-    public interface IArticleRepository : IDataRepository<Article>
-    {
-        Article GetArticleWithSection(int id);
-    }
+    //public interface IArticleRepository : IDataRepository<Article>
+    //{
+    //    Article GetArticleWithSection(int id);
+    //}
 }
