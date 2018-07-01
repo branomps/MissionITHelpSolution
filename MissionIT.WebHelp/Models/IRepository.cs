@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MissionIT.WebHelp.Models
 {
-    internal interface IRepository<T> where T : class
+    public interface IRepository<T> where T : class
     {
         T GetOne(int id);
         IEnumerable<T> GetAll();
