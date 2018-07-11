@@ -9,8 +9,10 @@ body {
     vertical-align: text-bottom;
 }
 /* Top Navbar ***************************************************************************************************************/
-.box-shadow{
-    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
+.box-shadow {
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+     box-shadow: 0 10px 6px -6px #777; 
 }
 
 .border {
