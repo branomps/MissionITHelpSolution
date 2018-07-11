@@ -21,27 +21,11 @@
 </head>
 <body>
     <div class="container">
-        <nav class="navbar navbar-expand-md navbar-light bg-light rounded border box-shadow">
+        <nav class="navbar navbar-expand-md navbar-light bg-light rounded border box-shadow-down">
             <a class="navbar-brand" href="#">
                     <img src="~/images/logo/logo.png" />
                 </a>
                 <h2>MPS Help System</h2>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="About">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
         </nav>
         <div class="container body-content">
             @RenderBody()
