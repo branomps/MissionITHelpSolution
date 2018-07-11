@@ -1,5 +1,6 @@
-﻿
+﻿@import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&lang=en");
 body {
+    font-family: 'Open Sans', sans-serif;
     font-size: .875rem;
 }
 
