@@ -10,9 +10,17 @@ namespace MissionIT.WebHelp.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IUnitOfWork _unitOfWork;
+
+        public HomeController(IUnitOfWork unitOfWork)
+        {
+            _unitOfWork = unitOfWork;
+        }
+
         public IActionResult Index()
         {
-            return View();
+            var sections = _unitOfWork.Sections.GetAll();
+            return View(sections);
         }
 
         public IActionResult About()

@@ -9,7 +9,7 @@ namespace MissionIT.WebHelp.Data
 {
     public class Repository<T> : IRepository<T> where T : class
     {
-        protected readonly  HelpDbContext Context;
+        protected readonly HelpDbContext Context;
 
         public Repository(HelpDbContext ctx)
         {
@@ -24,7 +24,7 @@ namespace MissionIT.WebHelp.Data
         {
             return Context.Set<T>().ToList();
         }
-        public IQueryable<T> Find(Expression<Func<T, bool>> predicate)
+        public IEnumerable<T> Find(Expression<Func<T, bool>> predicate)
         {
             return Context.Set<T>().Where(predicate);
         }

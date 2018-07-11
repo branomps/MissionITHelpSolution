@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using MissionIT.WebHelp.Data;
+using MissionIT.WebHelp.Models;
 
 namespace MissionIT.WebHelp
 {
@@ -25,6 +26,7 @@ namespace MissionIT.WebHelp
         {
             
             services.AddDbContextPool<HelpDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("HelpDatabase")));
+            services.AddScoped<IUnitOfWork,UnitOfWork>();
             services.AddMvc();
         }
 

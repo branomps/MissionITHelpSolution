@@ -6,7 +6,7 @@ using MissionIT.WebHelp.Models;
 
 namespace MissionIT.WebHelp.Models
 {
-    interface IUnitOfWork 
+     public interface IUnitOfWork : IDisposable
     {
         ISectionRepository Sections { get; }
         IArticleRepository Articles { get; }

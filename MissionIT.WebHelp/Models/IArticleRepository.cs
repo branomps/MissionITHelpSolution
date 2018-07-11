@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MissionIT.WebHelp.Models;
 
 namespace MissionIT.WebHelp.Models
 {
-    public interface IArticleRepository : IDataRepository<Article>
+    public interface IArticleRepository : IRepository<Article>
     {
-        Article GetArticleWithSection(int id);
+        IEnumerable<Article> GetArticleWithSection();
     }
 }

@@ -6,8 +6,8 @@ using MissionIT.WebHelp.Models;
 
 namespace MissionIT.WebHelp.Models
 {
-    public interface ISectionRepository : IDataRepository<Section>
+    public interface ISectionRepository : IRepository<Section>
     {
-        IEnumerable<Section> GetSectionsWithArticles();
+        Section GetSectionWithArticles(int id);
     }
 }
